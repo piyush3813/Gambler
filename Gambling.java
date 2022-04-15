@@ -15,6 +15,17 @@ public class Gambling {
         int bet = 1;
         //gambler bet results either win or loose
         int z = (int)((Math.random()*10)%2);
-        logger.info(z);
+
+        switch (z){
+            case 0:
+                logger.info("OOOOOHHH !!!! you lost ");
+                total_money--;
+                break;
+            case 1:
+                logger.info("OOOHHH yeahhhh you WON !!!!!");
+                total_money++;
+                break;
+
+        }
     }
 }
